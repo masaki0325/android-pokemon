@@ -10,6 +10,11 @@ A simple Pokemon app built with Jetpack Compose, Hilt, Room, and Retrofit. The a
 - Pagination to load additional Pokemon
 - Dark mode and light mode support
 
+## Demo
+
+[untitled.webm](https://github.com/user-attachments/assets/35c45085-c52f-4c8a-80d7-18ee4288f3e5)
+
+
 ## Tech Stack
 
 This project uses the following technologies:
