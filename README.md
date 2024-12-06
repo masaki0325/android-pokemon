@@ -1,73 +1,63 @@
 # Pokemon App
 
-A simple Pokemon app built with Jetpack Compose, Hilt, Room, and Retrofit. The app fetches data from a Pokemon API and allows users to browse Pokemon, view details, favorite them, and see a list of favorited Pokemon.
+Jetpack Compose、Hilt、Room、Retrofit を使用して構築されたシンプルなポケモンアプリです。このアプリはポケモンAPIからデータを取得し、ポケモンを閲覧、詳細表示、お気に入り登録、またお気に入りのポケモン一覧を表示する機能を提供します。
 
-## Features
+## 特徴
 
-- Fetch and display a list of Pokemon
-- View detailed information about each Pokemon (name, height, weight, and sprite)
-- Favorite/unfavorite Pokemon and view a list of favorites
-- Pagination to load additional Pokemon
-- Dark mode and light mode support
+- ポケモンリストの取得と表示
+- 各ポケモンの詳細情報の表示（名前、身長、体重、スプライト）
+- ポケモンのお気に入り登録・解除、お気に入りリストの表示
+- ページネーションによる追加ポケモンの読み込み
+- ダークモードおよびライトモードのサポート
 
-## Demo
+## デモ
 
 [untitled.webm](https://github.com/user-attachments/assets/35c45085-c52f-4c8a-80d7-18ee4288f3e5)
 
+## 技術スタック
 
-## Tech Stack
+このプロジェクトは以下の技術を使用しています：
 
-This project uses the following technologies:
+- **Kotlin 2.0.20**: プログラミング言語
+- **Jetpack Compose**: UIツールキット
+- **Hilt 2.52**: 依存性注入ライブラリ
+- **Room 2.6.1**: ローカルデータベース
+- **Retrofit 2.9.0**: API通信用のネットワーキングライブラリ
+- **Coil 2.3.0**: 画像読み込みライブラリ
+- **OkHttp 4.12.0**: HTTPクライアント
+- **Navigation Compose 2.8.3**: Jetpack Compose ナビゲーション
+- **Material3 1.3.0**: マテリアルデザインコンポーネント
 
-- **Kotlin 2.0.20**: Programming language
-- **Jetpack Compose**: UI Toolkit
-- **Hilt 2.52**: Dependency injection
-- **Room 2.6.1**: Local database
-- **Retrofit 2.9.0**: Networking library for API communication
-- **Coil 2.3.0**: Image loading library
-- **OkHttp 4.12.0**: HTTP client
-- **Navigation Compose 2.8.3**: Jetpack Compose Navigation
-- **Material3 1.3.0**: Material Design components
+## ディレクトリ構成
 
-```````
+```
 /app
     └── src/main/
         ├── java/
         │   └── com/example/myapp/
-        │       ├── data/                # Data layer
-        │       │   ├── model/           # Data models (e.g., Pokemon.kt)
-        │       │   ├── local/           # Room database and DAOs
-        │       │   └── remote/          # Retrofit API service
-        │       ├── domain/              # Business logic layer
-        │       │   └── model/           # Domain models
-        │       ├── ui/                  # UI layer
-        │       │   ├── components/      # Reusable UI components
-        │       │   ├── screens/         # Screen UI (PokemonListScreen, SettingsScreen, etc.)
-        │       │   ├── state/           # UI state management (e.g., PokemonListUiState)
-        │       │   └── navigation/      # Navigation setup (PokemonNavGraph.kt)
-        │       ├── viewmodel/           # ViewModel layer
-        │       └── di/                  # Dependency injection (Hilt modules)
+        │       ├── data/                # データ層
+        │       │   ├── model/           # データモデル (e.g., Pokemon.kt)
+        │       │   ├── local/           # RoomデータベースとDAO
+        │       │   └── remote/          # Retrofit APIサービス
+        │       ├── domain/              # ビジネスロジック層
+        │       │   └── model/           # ドメインモデル
+        │       ├── ui/                  # UI層
+        │       │   ├── components/      # 再利用可能なUIコンポーネント
+        │       │   ├── screens/         # スクリーンUI (PokemonListScreen, SettingsScreenなど)
+        │       │   ├── state/           # UIステート管理 (e.g., PokemonListUiState)
+        │       │   └── navigation/      # ナビゲーション設定 (PokemonNavGraph.kt)
+        │       ├── viewmodel/           # ViewModel層
+        │       └── di/                  # 依存性注入 (Hiltモジュール)
         └── res/
-            ├── layout/                  # XML layout files (if any)
-            ├── drawable/                # Image assets
-            └── values/                  # Colors, strings, themes
-```````
+            ├── layout/                  # XMLレイアウトファイル (必要に応じて)
+            ├── drawable/                # 画像アセット
+            └── values/                  # 色、文字列、テーマ
+```
 
-## Requirements
+## 必要要件
 
-- Android Studio Flamingo or newer
+- Android Studio Flamingo以上
 - Kotlin 2.0.x
 - Gradle 8.1.1
-- Android SDK 33 or higher
+- Android SDK 33以上
 
-## Getting Started
-
-To get a local copy up and running, follow these steps:
-
-### Prerequisites
-
-1. Install Android Studio Flamingo or newer.
-2. Clone this repository:
-
-```bash
-git clone https://github.com/your-username/pokemon-app.git
